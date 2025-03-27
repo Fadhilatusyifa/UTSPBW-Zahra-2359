@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <div class="logo">
+            <h1><span>L</span>ala.</h1>
+            </div>
+            <ul>
+                <li><a href="#header"><h3>Home</h3></a></li>
+                <li><a href="#about"><h3>About Me</h3></a></li>
+                <li><a href="#pemrogramanWeb"><h3>Pemrograman Web</h3></a></li>
+                <li><a href="#contact"><h3>Contact</h3></a></li>
+            </ul>
+        </nav>
+    
+        <div class="header-text">
+            <h1>Hi, I'm <span>Zahra</span><br>Fadhilatusyifa</h1>
+        </div>
+    </div>
+</div> 
+
+
+<!-- -------------------- about -------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-1">
+                <img src="Gambar/foto.jpg">
+                <div class="button-group">
+                    <a href="#experience"><button class="btn">Experience</button></a>
+                </div>
+            </div>
+            <div class="about-2">
+                <h1 class="sub-tittle">About Me</h1>
+                <p>Halo, saya Zahra Fadhilatusyifa, mahasiswa jurusan Informatika di Fakultas Ilmu Komputer, Universitas Singaperbangsa Karawang. 
+                   Saya berasal dari kelas 4C dengan NPM 2310631170159. Saat ini, saya terus belajar dan mengembangkan, baik dalam coding maupun desain.
+                </p>
+
+                <div class="tab-tittles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('minat')">Minat</p>
+                    <p class="tab-links" onclick="opentab('Skill')">Skill</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2023 - Sekarang</span><br>S1 Ilmu Komputer, Universitas Singaperbangsa Karawang</li>
+                        <li><span>2020 - 2023</span><br>SMAIT MUSJIA</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="minat">
+                    <ul>
+                        <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Skill">
+                    <ul>
+                        <li><span>Bahasa Pemrograman</span><br>HTML - CSS - JavaScript - PHP</li>
+                        <li><span>Tools</span><br>VS Code - Figma</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Experience -->
+
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-tittle">My Experience</h1>
+        <div class="experience-list">
+            <div class="experience">
+                <img src="Gambar/Pengalaman1.png">
+                <div class="layer">
+                    <h2>Membuat Sistem Manajemen Reservasi Salon</h2>
+                    <p>Sistem aplikasi untuk mempermudah proses pemesanan layanan di salon dengan berbagai fitur yang disediakan untuk pelanggan dan admin.
+                       Pelanggan bisa melakukan pemesanan sendiri lewat aplikasi yang interaktif, dan di sisi lain, admin diberikan hak akses untuk mengelola 
+                       data pemesanan serta mengawasi pengguna. </p>
+                </div>
+            </div>
+
+            <div class="experience">
+                <img src="Gambar/Pengalaman2.jpg">
+                <div class="layer">
+                    <h2>Merancang Bangun Aplikasi E-Wallet</h2>
+                    <p>Slix dibuat untuk mempermudah transaksi digital sehari-hari. Aplikasi ini memungkinkan pengguna membayar dengan
+                       cepat dan aman tanpa harus membawa uang tunai, yang dilengkapi dengan fitur pembayaran menggunakan QR code dan 
+                       transfer bank.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Pemrograman Web -->
+<div id="pemrogramanWeb">
+    <div class="pbw">
+        <h1>Pemrograman Web: Materi & Contoh Kode</h1>
+        
+        <div class="materi">
+            <h2>Pertemuan 1: HTML Dasar</h2>
+            <p>HTML digunakan untuk membuat struktur dasar halaman web.</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Halo Dunia&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang di Pemrograman Web&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+        
+        <div class="materi">
+            <h2>Pertemuan 2: CSS Dasar</h2>
+            <p>CSS digunakan untuk mengatur tampilan halaman web.</p>
+            <pre>
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: navy;
+    text-align: center;
+}
+            </pre>
+        </div>
+        
+        <div class="materi">
+            <h2>Pertemuan 3: JavaScript Dasar</h2>
+            <p>JavaScript digunakan untuk menambahkan interaktivitas pada halaman web.</p>
+            <pre>
+function sapa() {
+    alert("Halo, Selamat Belajar JavaScript!");
+}
+            </pre>
+        </div>
+        
+        <div class="materi">
+            <h2>Pertemuan 4: Pengenalan PHP</h2>
+            <p>PHP adalah bahasa pemrograman sisi server untuk membuat halaman dinamis.</p>
+            <pre>
+&lt;?php
+    echo "Halo, ini adalah PHP!";
+?&gt;
+            </pre>
+        </div>
+        
+        <div class="materi">
+            <h2>Pertemuan 5: Mengontrol Alur Program</h2>
+            <p>Struktur kontrol seperti if-else digunakan untuk membuat keputusan dalam kode.</p>
+            <pre>
+&lt;?php
+$nilai = 80;
+if ($nilai >= 75) {
+    echo "Anda Lulus!";
+} else {
+    echo "Anda Tidak Lulus!";
+}
+?&gt;
+            </pre>
+        </div>
+        
+        <div class="materi">
+            <h2>Pertemuan 6: Perulangan dan Array</h2>
+            <p>Array digunakan untuk menyimpan banyak data, dan perulangan digunakan untuk mengaksesnya.</p>
+            <pre>
+&lt;?php
+$buah = ["Apel", "Jeruk", "Mangga"];
+foreach ($buah as $b) {
+    echo $b . "<br>";
+}
+?&gt;
+            </pre>
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <div class="contact-1">
+                    <a href="mailto:fadhilatusyifa@gmail.com" target="_blank" class="contact-item-1">
+                        <img src="https://img.icons8.com/?size=100&id=100004&format=png&color=000000" class="icon">fadhilatusyifa@gmail.com
+                    </a>
+                    <a href="https://wa.me/qr/DMXPDJP24EIUK1" target="_blank" class="contact-item-1">
+                        <img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000" class="icon">0895372206191
+                    </a>
+                </div>
+                <div class="contact-2">
+                    <a href="https://github.com/Fadhilatusyifa" target="_blank" class="contact-item-2">
+                        <img src="https://img.icons8.com/?size=100&id=106562&format=png&color=000000" alt="Github" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/ggggaaalio?igsh=Z29zeDJtYWJrbm00" target="_blank" class="contact-item-2">
+                        <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="Instagram" class="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/zahra-fadhilatusyifa-ba6313353/" target="_blank" class="contact-item-2">
+                        <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="linkedin" class="icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form id="contactForm" action="send_mail.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                
+                </form>
+                <div id="notification" class="notification"></div>
+            </div>           
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy Zahra Fadhilatusyifa.</p>
+    </footer>
+
+ </div>
+</body>
+</html>
